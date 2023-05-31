@@ -7,7 +7,10 @@
 }
 
 body{
+    height: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .hero{
@@ -24,22 +27,28 @@ body{
 .main-width{
     width: 100%;
     max-width: 100%;  
-    padding: 0px;
 }
 
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #333;
-padding: 10px;
-width: 100%;
-}
-
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 769px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
 @media (max-width: 768px){
     nav .nav-list{
         flex-direction: column;
-    }
+}
+
+    
 }
 
 .nav-list {
@@ -345,13 +354,31 @@ width: 100%;
     flex-direction: column;
 }
 
+.work2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
 
-  .contact-wrapper > * {
+.contact-wrapper > * {
+    padding: 15px;
+    width: 100%;
+}
+
+.contact-wrapper2 > * {
     padding: 15px;
     width: 100%;
 }
 
 .contact-form h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.contact-form2 h3 {
     text-align: center;
     font-size: 30px;
     padding: 15px;
@@ -364,11 +391,20 @@ width: 100%;
     padding-bottom: 30px;
 }
 
+.contact-form2 p.textform {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
 .contact-form .input-group {
     display: flex;
     flex-direction: column;
     margin-top: 16px;
 }
+
+
 
 @media (min-width: 768px) {
     .contact-form .input-group {
@@ -383,6 +419,21 @@ width: 100%;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.contact-form2 form button,
+.contact-form2 form input,
+.contact-form2 form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form2 form button{
+    background-color: green;
+    border-radius: 2px;
+    border-color: green;
+    color: white;
 }
 
 .contact-form form button{
@@ -403,6 +454,24 @@ footer {
     width: 100%;
     padding: 60px 20px;
     background-color: blue;
+}
+
+.footer {
+    background-color: blue;
+    padding: 60px 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 60px 20px;
+        background-color: blue;
+        position: fixed;
+        
+    }
 }
 
 .nav-list-footer {
@@ -444,4 +513,37 @@ footer {
 
 .nav-list-footer li a:hover {
     text-decoration: underline;
+}
+
+.tickets {
+   
+    width: 100%;
+    height: 100%;  
+}    
+
+
+.descuento-cuadro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.card2 {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.selector {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 2px;
 }
